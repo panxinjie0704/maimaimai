@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>慢慢买-品牌大全详细</title>
+  <link rel="stylesheet" href="lib/mui/css/mui.css">
+  <link rel="stylesheet" href="css/brand.css">
+</head>
+<script src="lib/flexible.js"></script>
+
+<body>
+  <div class="mmm_container">
+    <!-- 头部 -->
+    <div class="mmm_header">
+      <div class="logo mui-pull-left">
+        <img src="images/header_logo.png" alt="">
+      </div>
+      <div class="download mui-pull-right">
+        <img src="images/header_app.png" alt="">
+      </div>
+    </div>
+    <!-- 搜索框 -->
+    <div class="mmm_search">
+      <input type="text" id="search" placeholder="请输入你想要比价的商品" class="mui-pull-left">
+      <button class="btn_search mui-pull-right ">搜索</button>
+    </div>
+
+
+    <!-- 面包屑导航-->
+    <div class="breadcrumb">
+      <a href="index.html">首页 &gt;</a>
+      <a href="category.html">全部分类&gt;</a>
+    </div>
+
+    <!-- 哪个品牌好的区域 -->
+    <div class="hd">
+      平板电视哪个牌子好
+    </div>
+
+    <!-- 内容区域 -->
+
+    <div class="brand_content">
+      <ul class="desc">
+        <!-- 挖个坑 -->
+      </ul>
+    </div>
+
+    <div class="hd">
+      平板电视产品销量排行
+    </div>
+
+    <!-- 商品区域 -->
+
+    <div class="list">
+      <ul>
+        <!-- 挖个坑 -->
+      </ul>
+    </div>
+
+    <div class="hd">
+      平板电视最新评论
+    </div>
+
+    <div class="commit">
+      <ul>
+       <!-- 挖个坑 -->
+      </ul>
+
+
+    </div>
+
+    <!-- 底部 -->
+    <div class="mmm_footer">
+      <div class="info">
+        <ul class="mui-clearfix">
+          <li>
+            <a href="#">
+              登录
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              注册
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img class="goTop" src="images/top.jpg">
+              <span>返回顶部</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="last">
+        <p class="first">
+          <span class="download">
+            <a href="#">手机APP下载</a>
+          </span>
+          <span class="version">
+            <a href="#">慢慢买手机版</a>
+          </span>
+          -- 掌上比价平台
+        </p>
+        <p class="second">m.manmanbuy.com</p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script type="text/html" id="tpl">
+    {{each result v i}}
+    <li>
+      <a href="bijia.html?productId={{v.brandId}}">
+        <div class="left">
+          {{i+1}}
+        </div>
+        <div class="right">
+          <div class="title">
+            {{v.brandName}}
+          </div>
+          <div class="sall">
+            {{v.brandInfo}}
+          </div>
+          <span class="mui-icon mui-icon-arrowright link"></span>
+        </div>
+      </a>
+    </li>
+
+    {{/each}}
+
+  </script>
+
+  <script type="text/html" id="tpl2">
+    {{each result v i}}
+    <li>
+      <a href="bijia.html?productId={{v.productId}}" class="mui-clearfix">
+        <div class="pic">
+          {{@v.productImg}}
+        </div>
+        <div class="product">
+          <div class="tel">
+            {{v.productName}}
+          </div>
+
+          <div class="price">
+            <span class="first">{{v.productPrice}}</span>
+          </div>
+
+          <div class="more">
+            <span>{{v.productQuote}}</span>
+            <span>{{v.productCom}}</span>
+          </div>
+        </div>
+
+      </a>
+    </li>
+    {{/each}}
+  </script>
+
+  <script type="text/html" id="tpl3">
+  {{each result v i}}
+    <li>
+        <a class="mui-clearfix" href='#'>
+          
+          <div class="pro_tit">
+            <div class="pic">
+             {{@img}}
+            </div>
+            <div class="pro_desc">
+              {{productName}}
+            </div>
+          </div>
+  
+
+          <div class="pro_content">
+            <div class="content_title">
+              <span class="name">{{v.comName}}：</span>
+              <span class="mui-icon mui-icon-starhalf star"></span>
+              <span class="date">{{v.comTime}}</span>
+            </div>
+
+            <div class="main">
+             {{v.comContent}}
+            </div>
+          </div>
+        </a>
+      </li>
+  {{/each}}
+  </script>
+
+
+
+
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/mui/js/mui.js"></script>
+  <script src="lib/artTemplate/template-web.js"></script>
+  <script src="js/common/Route.js"></script>
+  <script src="js/common/Tools.js"></script>
+  <script src="js/brand.js"></script>
+</body>
+
+</html>

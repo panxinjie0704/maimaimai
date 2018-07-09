@@ -1,0 +1,237 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+.mmm_container {
+  width: 100%;
+  background-color: #fff;
+  max-width: 750px;
+  min-width: 320px;
+  margin: 0 auto;
+  margin: 0rem /* 0/75 */;
+}
+.mmm_container .mmm_header {
+  width: 100%;
+  height: 1.28rem;
+  background-color: #ff841d;
+}
+.mmm_container .mmm_header .logo {
+  width: 4.44rem /* 333/75 */;
+  height: 100%;
+  padding-top: 0.266667rem /* 20/75 */;
+  margin-left: 0.266667rem /* 20/75 */;
+}
+.mmm_container .mmm_header .logo img {
+  width: 4.946667rem /* 371/75 */;
+  height: 0.666667rem /* 50/75 */;
+}
+.mmm_container .mmm_header .download {
+  width: 1.306667rem /* 98/75 */;
+  height: 100%;
+  padding: 0.133333rem /* 10/75 */;
+}
+.mmm_container .mmm_header .download img {
+  width: 0.906667rem /* 68/75 */;
+  line-height: 0.906667rem /* 68/75 */;
+}
+.mmm_container .mmm_search {
+  width: 100%;
+  height: 1.33333333rem;
+  background-color: green;
+  padding-top: 0.266667rem /* 20/75 */;
+  background-color: #fff;
+  margin-bottom: 0.24rem /* 18/75 */;
+}
+.mmm_container .mmm_search #search {
+  width: 7.6rem /* 570/75 */;
+  height: 0.76rem /* 57/75 */;
+  margin-left: 0.24rem /* 18/75 */;
+  border-radius: 0.533333rem /* 40/75 */;
+  background-color: #f1f1f1;
+  font-size: 0.36rem /* 27/75 */;
+}
+.mmm_container .mmm_search .btn_search {
+  width: 1.6rem /* 120/75 */;
+  height: 0.8rem /* 60/75 */;
+  border-radius: 0.533333rem /* 40/75 */;
+  font-size: 0.24rem /* 18/75 */;
+  background-color: #ff841d;
+  border: 0px;
+  color: #fff;
+  margin-right: 0.2rem /* 15/75 */;
+}
+.mmm_container .mmm_nav {
+  width: 100%;
+  padding-top: 0.133333rem /* 10/75 */;
+  background-color: #fff;
+}
+.mmm_container .mmm_nav ul {
+  width: 100%;
+  height: 100%;
+  padding-top: 0.266667rem /* 20/75 */;
+}
+.mmm_container .mmm_nav li {
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+.mmm_container .mmm_nav li a {
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+}
+.mmm_container .mmm_nav li a .text {
+  font-size: 0.293333rem /* 22/75 */;
+  margin-top: 0.2rem /* 15/75 */;
+  height: 0.4rem /* 30/75 */;
+  color: #000;
+}
+.mmm_container .mmm_nav li a img {
+  width: 1.4rem /* 105/75 */;
+  height: 1.4rem;
+}
+.mmm_container .mmm_nav li:nth-child(n+9) {
+  display: none;
+}
+.mmm_container .mmm_nav li:nth-child(n+9).now {
+  display: block;
+}
+.mmm_container .mmm_recommend {
+  width: 100%;
+  margin-top: 0.24rem /* 18/75 */;
+}
+.mmm_container .mmm_recommend .head {
+  width: 100%;
+  height: 0.906667rem /* 68/75 */;
+  background-color: #ff841d;
+}
+.mmm_container .mmm_recommend .head .left {
+  width: 3.333333rem /* 250/75 */;
+  height: 100%;
+  line-height: 0.906667rem /* 68/75 */;
+  padding-left: 0.133333rem /* 10/75 */;
+  color: #fff;
+  font-size: 0.4rem /* 30/75 */;
+}
+.mmm_container .mmm_recommend .head .right {
+  line-height: 0.906667rem /* 68/75 */;
+  margin-left: 0.266667rem /* 20/75 */;
+}
+.mmm_container .mmm_recommend .content li {
+  height: 3.466667rem /* 260/75 */;
+  border-bottom: 1px solid #f1f1f1;
+  background-color: #fff;
+  position: relative;
+}
+.mmm_container .mmm_recommend .content li .img {
+  width: 3.066667rem /* 230/75 */;
+  height: 100%;
+  padding: 0.333333rem /* 25/75 */;
+  line-height: 3.066667rem /* 230/75 */;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.mmm_container .mmm_recommend .content li .img img {
+  width: 100%  ;
+  padding: 0.133333rem /* 10/75 */;
+}
+.mmm_container .mmm_recommend .content li .re_right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 6.866667rem /* 515/75 */;
+  height: 3.413333rem /* 256/75 */;
+}
+.mmm_container .mmm_recommend .content li .re_right .top {
+  width: 100%;
+  height: 1.533333rem /* 115/75 */;
+  line-height: 0.8rem /* 60/75 */;
+  font-size: 0.386667rem /* 29/75 */;
+  color: #333333;
+}
+.mmm_container .mmm_recommend .content li .re_right .bottom {
+  width: 100%;
+  height: 0.533333rem /* 40/75 */;
+  line-height: 0.533333rem /* 40/75 */;
+  font-size: 0.32rem /* 24/75 */;
+  padding-right: 0.266667rem /* 20/75 */;
+  position: absolute;
+  bottom: 0.76rem /* 57/75 */;
+  left: 0px;
+}
+.mmm_container .mmm_recommend .more {
+  height: 1.16rem /* 87/75 */;
+  padding: 0.266667rem /* 20/75 */ 0.266667rem /* 20/75 */ 0 0.266667rem /* 20/75 */;
+}
+.mmm_container .mmm_recommend .more a {
+  border: 1px solid #f1f1f1;
+  display: block;
+  height: 0.893333rem /* 67/75 */;
+  line-height: 0.893333rem /* 67/75 */;
+  font-size: 0.386667rem /* 29/75 */;
+  text-align: center;
+  color: #000;
+  border-radius: 0.133333rem /* 10/75 */;
+  background-image: linear-gradient(#ffffff, #f4f4f4);
+}
+.mmm_container .mmm_footer {
+  width: 100%;
+  background-color: #efefef;
+  height: 3.266667rem /* 245/75 */;
+  margin-top: 0.133333rem /* 10/75 */;
+  padding-top: 0.666667rem /* 50/75 */;
+}
+.mmm_container .mmm_footer .info {
+  height: 0.906667rem /* 68/75 */;
+  width: 100%;
+  border-top: 0.013333rem /* 1/75 */ solid #ccc;
+  border-bottom: 0.013333rem /* 1/75 */ solid #ccc;
+}
+.mmm_container .mmm_footer .info li:nth-child(1) {
+  border-left: none;
+}
+.mmm_container .mmm_footer .info li {
+  float: left;
+  height: 100%;
+  width: 33.33%;
+  line-height: 0.906667rem /* 68/75 */;
+  text-align: center;
+  font-size: 0.4rem /* 30/75 */;
+  border-left: 1px solid #ccc;
+}
+.mmm_container .mmm_footer .info li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #392e30;
+}
+.mmm_container .mmm_footer .info li a img {
+  width: 0.4rem /* 30/75 */;
+  height: 0.4rem /* 30/75 */;
+}
+.mmm_container .mmm_footer .last {
+  height: 1.653333rem /* 124/75 */;
+  width: 100%;
+  padding-top: 0.4rem /* 30/75 */;
+}
+.mmm_container .mmm_footer .last .first,
+.mmm_container .mmm_footer .last .second {
+  text-align: center;
+  font-size: 0.306667rem /* 23/75 */;
+  height: 0.506667rem /* 38/75 */;
+  line-height: 0.506667rem /* 38/75 */;
+}
+.mmm_container .mmm_footer .last .first {
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 0.306667rem /* 23/75 */;
+}
+.mmm_container .mmm_footer .last .first .download a {
+  color: #fe0a05;
+}
+.mmm_container .mmm_footer .last .first .version a {
+  color: #020817;
+}

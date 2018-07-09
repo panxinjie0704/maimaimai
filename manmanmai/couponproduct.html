@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>慢慢买-肯德基优惠券</title>
+  <link rel="stylesheet" href="lib/mui/css/mui.css">
+  <link rel="stylesheet" href="css/couponproduct.css">
+</head>
+<script src="lib/flexible.js"></script>
+
+<body>
+  <div class="mmm_container">
+    <!-- 头部 -->
+    <div class="mmm_header">
+      <div class="left">
+        <a href="javascript:history.go(-1)">
+          <span class="mui-icon mui-icon-back"> </span>
+        </a>
+      </div>
+      <div class="center">
+          肯德基优惠券
+      </div>
+      <div class="right">
+        <img src="images/header_app.png" alt="">
+      </div>
+    </div>
+
+    <!-- 优惠券展示 -->
+    <div class="coupon-list">
+    <div class="cl_head">
+        --点餐前出示手机中的优惠券，即可享受优惠--
+    </div>
+
+    <div class="show">
+      <ul>
+      <!-- 挖 个坑-->
+      </ul>
+    </div>
+
+
+    </div>
+    
+
+    <!-- 底部 -->
+    <div class="mmm_footer">
+      <div class="info">
+        <ul class="mui-clearfix">
+          <li>
+            <a href="#">
+              登录
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              注册
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img class="goTop" src="images/top.jpg">
+              <span>返回顶部</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="last">
+        <p class="first">
+          <span class="download">
+            <a href="#">手机APP下载</a>
+          </span>
+          <span class="version">
+            <a href="#">慢慢买手机版</a>
+          </span>
+          -- 掌上比价平台
+        </p>
+        <p class="second">m.manmanbuy.com</p>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/html" id="tpl">
+    {{each result v i}}
+    <li>
+        <a href="#">
+       <div class="pic">
+         {{@v.couponProductImg}}
+         </div>
+         <div class="text">
+           <div class="top">
+              {{v.couponProductName}}
+              <div class="money">{{v.couponProductPrice}}</div>
+           </div>
+           <div class="date">
+              {{v.couponProductTime}}
+           </div>
+         </div>
+      </a>
+    </li>
+    {{/each}}
+  
+  
+  </script>
+
+  
+  
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/mui/js/mui.js"></script>
+  <script src="lib/artTemplate/template-web.js"></script>
+  <script src="lib/iscroll.js"></script>
+  <script src="js/common/Route.js"></script>
+  <script src="js/common/Tools.js"></script>
+  <script src="js/couponproduct.js"></script>
+</body>
+
+</html>

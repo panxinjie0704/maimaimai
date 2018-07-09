@@ -1,0 +1,79 @@
+@import 'common.less';
+@import 'base-moneyctrl.less';
+
+
+.mmm_container .mmm_header {
+  background-color: #f4483e;
+}
+
+body,html{
+ background-color: #fff;  
+//  overflow-x: hidden;
+}
+.mmm_container {
+ margin: 0rem /* 0/75 */;
+}
+
+// 优惠券区域
+
+.coupon-list {
+  width: 100%;
+  .cl_head {
+    width: 100%;
+    height: .853333rem /* 64/75 */;
+    line-height: .853333rem /* 64/75 */;
+    text-align: center;
+    font-size: .32rem /* 24/75 */;
+    color: #9d9eaa;
+
+  }
+
+  .show {
+    width: 100%;
+    li {
+      width: 100%;
+      height: 4.266667rem /* 320/75 */;
+      padding: .266667rem /* 20/75 */;
+      border-bottom: 1px solid #cccc;
+      .pic {
+        width: 2.666667rem /* 200/75 */;
+        height: 2.133333rem /* 160/75 */;
+        float: left;
+        img {
+          display: block;
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .text {
+        float: left;
+        width: 6.4rem /* 480/75 */;
+        height: 100%;
+        margin-left: .253333rem /* 19/75 */;
+        .top {
+          height: 2.133333rem /* 160/75 */;
+          width: 100%;
+          font-size: .346667rem /* 26/75 */;
+          line-height: .56rem /* 42/75 */;
+          color: #140e08;
+          .money {
+            font-size: .346667rem /* 26/75 */;
+            color: #040000;
+            font-weight: 700;
+            padding-top: .133333rem /* 10/75 */;
+          }
+        }
+
+        .date {
+          font-size: .346667rem /* 26/75 */;
+          color: #f39977;
+          margin-top: .88rem /* 66/75 */;
+        }
+
+      }
+    }
+
+  }
+
+}

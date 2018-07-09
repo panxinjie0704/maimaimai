@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>慢慢买-比价详情</title>
+  <link rel="stylesheet" href="lib/mui/css/mui.css">
+  <link rel="stylesheet" href="css/bijia.css">
+</head>
+<script src="lib/flexible.js"></script>
+
+<body>
+  <div class="mmm_container">
+    <!-- 头部 -->
+    <div class="mmm_header">
+      <div class="logo mui-pull-left">
+        <img src="images/header_logo.png" alt="">
+      </div>
+      <div class="download mui-pull-right">
+        <img src="images/header_app.png" alt="">
+      </div>
+    </div>
+    <!-- 搜索框 -->
+    <div class="mmm_search">
+      <input type="text" id="search" placeholder="请输入你想要比价的商品" class="mui-pull-left">
+      <button class="btn_search mui-pull-right ">搜索</button>
+    </div>
+
+    <!-- 面包屑导航-->
+    <div class="breadcrumb">
+        <a href="index.html">首页 &gt;</a>
+        <a href="category.html"  class="one">全部分类&gt;</a>
+        <a href="javascript:;" class="two">电视&gt;</a>
+        <button class="mui-pull-right button">筛选</button>
+
+    </div>
+    <!-- nav -->
+    <div class="nav">
+      
+    </div>
+
+    <!-- 描述 -->
+    <div class="pro_de">
+      <div class="desc_title">
+        <ul class="mui-clearfix">
+          <li>
+            <a href="#">比价购买</a>
+          </li>
+          <li>
+            <a href="#">产品参数</a>
+          </li>
+          <li>
+            <a href="#">评价(2322)</a>
+          </li>
+        </ul>
+      </div>
+      <div class="go_cart">
+        <div class="top">
+        </div>
+        <div class="bottom">
+
+          * 实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时至数日的延迟。
+
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+    <!-- 评价 -->
+    <div class="appraise">
+      <div class="title">
+        网友评价
+      </div>
+      <div class="content">
+        <ul>
+          <!-- 挖个坑 -->
+        </ul>
+      </div>
+    </div>
+
+    <!-- 查看更多 -->
+
+    <div class="more">
+      <a href="javascript:;">
+        查看更多评价
+      </a>
+    </div>
+
+    <!-- 底部 -->
+    <div class="mmm_footer">
+        <div class="info">
+          <ul class="mui-clearfix">
+            <li>
+              <a href="#">
+                登录
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                注册
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                  <img class="goTop" src="images/top.jpg">
+                  <span>返回顶部</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="last">
+          <p class="first">
+            <span class="download">
+              <a href="#">手机APP下载</a>
+            </span>
+            <span class="version">
+              <a href="#">慢慢买手机版</a>
+            </span>
+            -- 掌上比价平台
+          </p>
+          <p class="second">m.manmanbuy.com</p>
+        </div>
+      </div>
+  </div>
+
+
+  <!-- 模块一 -->
+  <script type="text/html" id="tpl">
+    <div class="nav_title">
+        {{result[0].productName}}
+      </div>
+      <div class="nav_img">
+        {{@result[0].productImg}}
+      </div>
+      <div class="save">
+        <img src="images/sc.jpg">
+      </div>
+
+  </script>
+
+
+  <!-- 模块二 -->
+  <script type="text/html" id="tpl1">
+    {{ each result v i}}
+    <li class="text">
+        <div class="first">
+          <span class="name">{{v.comName}}</span>
+          <span class="time">{{v.comTime}}</span>
+        </div>
+        <div class="from">
+          <span>{{v.comFrom}}</span>
+        </div>
+        <div class="content_desc">
+          {{v.comContent}}
+        </div>
+      </li>
+      {{/each}}
+  
+  </script>
+
+  
+
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/mui/js/mui.js"></script>
+  <script src="lib/artTemplate/template-web.js"></script>
+  <script src="js/common/Route.js"></script>
+  <script src="js/common/Tools.js"></script>
+  <script src="js/bijia.js"></script>
+</body>
+
+</html>

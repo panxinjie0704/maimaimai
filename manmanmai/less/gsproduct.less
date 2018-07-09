@@ -1,0 +1,201 @@
+@import 'base-moneyctrl.less';
+@import 'common.less';
+
+// body {
+//   background-color: #fff;
+// }
+.mmm_container {
+  margin: 0rem /* 0/75 */;
+ }
+ 
+
+//  头部的table栏
+ .content{
+  width: 100%;
+.title {
+  background-color: #fff;
+  position: relative; 
+  border-bottom: 1px solid #ccc;
+  ul {
+    // width: 36rem /* 2700/75 */;
+    padding-right: 1.04rem /* 78/75 */;//这边设置左边的padding可以让没装出来
+    li {
+      float: left;
+      line-height: 1.013333rem /* 76/75 */;
+      // width: .773333rem /* 58/75 */;
+      padding-left: .333333rem /* 25/75 */;
+      padding-right: .333333rem /* 25/75 */;
+      height: 1.013333rem /* 76/75 */;
+      width: 33.33%;
+      text-align: center;
+      position: relative;
+      a{
+        
+        display: block;
+        font-size: .4rem /* 30/75 */;
+        color: #2a2344;
+        border-bottom: .013333rem /* 1/75 */ solid transparent;//每个在先前的时候先设置一个透明的边框
+        
+      }
+
+      span {
+        width: .32rem /* 24/75 */;
+        height: .32rem /* 24/75 */;
+        font-size: .266667rem /* 20/75 */;
+        position: absolute;
+        top: .4rem /* 30/75 */;
+        right: .266667rem /* 20/75 */;
+      } 
+    }
+
+  
+  }
+  
+}
+
+
+// 搜索框
+.searchBtn {
+  width: 1.013333rem /* 76/75 */;
+  height: 1.013333rem /* 76/75 */;
+  background-color: pink;
+  position: absolute;
+  top: 1.28rem /* 96/75 */;
+  right: 0px;
+  padding-top: .266667rem /* 20/75 */;
+  padding-left: .2rem /* 15/75 */;
+  background-color: #fbfbfb;
+  .icon-search {  
+    width: .533333rem /* 40/75 */;
+    height: .533333rem /* 40/75 */;
+    background: url(../images/icon_bar.png) -24/75rem -24/75rem  no-repeat;
+    background-size: 5.906667rem /* 443/75 */ 3.546667rem /* 266/75 */; 
+  }
+ }
+
+
+
+.popbox{
+  width: 100%;
+  display: none;
+  li {
+    width: 100%;
+    border-bottom: 1px solid #cccc;
+    line-height: 1.066667rem /* 80/75 */;
+    padding: 0 .266667rem /* 20/75 */;
+    font-size: .44rem /* 33/75 */;
+    background-color: #fff;
+    a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+      color: #000;
+      .icon {
+        float: right;
+        font-size: .4rem /* 30/75 */;
+        display: none;
+        // display: block;
+      }
+      .icon.now{
+        display: block;
+      }
+    }
+  }
+}
+.popsort.now{
+  display: block;
+  z-index: 99;
+}
+.popcat.now{
+  display: block;
+  z-index: 99;
+  
+}
+.popprice.now{
+  display: block;
+  z-index: 99;
+  
+}
+ }
+
+
+//  下面的内容
+
+.list {
+padding: .266667rem /* 20/75 */ .16rem /* 12/75 */;
+width: 100%;
+
+ul {
+  width: 100%;
+  li {
+    width: 48%;
+    height: 6.066667rem /* 455/75 */;
+    // border: .013333rem /* 1/75 */ solid #ccc;
+    float: left;
+    margin-bottom: .2rem /* 15/75 */;
+    background-color: #fff;
+
+    a {
+      display: block;
+      width: 100%;
+      height: 100%;
+
+      .pic {
+        width: 4.56rem /* 342/75 */;
+        height: 4.493333rem /* 337/75 */;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .desc {
+        font-size: .266667rem /* 20/75 */;
+        line-height: .373333rem /* 28/75 */;
+        width: 100%;
+        color: #604f41;
+        margin-top: .133333rem /* 10/75 */;
+        height: .72rem /* 54/75 */;
+      }
+
+      .bottom {
+        width: 100%;
+        height: .853333rem /* 64/75 */;
+        padding: 0rem /* 0/75 */ .133333rem /* 10/75 */; 
+
+        
+        .price {
+          display: block;
+          float: left;
+          font-size: .453333rem /* 34/75 */;
+          color: #f64022;
+          white-space: 1.333333rem /* 100/75 */;
+          line-height: .746667rem /* 56/75 */;
+        }
+
+        .button {
+          display: block;
+          width: 1.653333rem /* 124/75 */;
+          background-color: #ff9501;
+          color: #fff;
+          float: right;
+          font-size: .346667rem /* 26/75 */;
+          text-align: center;
+          // padding-top: .186667rem /* 14/75 */;
+          // padding-bottom: .186667rem /* 14/75 */;
+          line-height: .706667rem /* 53/75 */;
+          border-radius: .133333rem /* 10/75 */;
+        }
+      }
+    }
+  
+  }
+
+  li:nth-child(odd){
+    margin-right: .32rem /* 24/75 */;
+  }
+}
+
+
+}

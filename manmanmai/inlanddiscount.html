@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>慢慢买-国内折扣</title>
+  <link rel="stylesheet" href="lib/mui/css/mui.css">
+  <link rel="stylesheet" href="css/inlanddiscount.css">
+</head>
+<script src="lib/flexible.js"></script>
+
+<body>
+  <div class="mmm_container">
+    <!-- 头部 -->
+    <div class="mmm_header">
+      <div class="left">
+        <a href="javascript:history.go(-1)">
+          <span class="mui-icon mui-icon-back"> </span>
+        </a>
+      </div>
+      <div class="center">国内折扣</div>
+      <div class="right">
+        <img src="images/header_app.png" alt="">
+      </div>
+    </div>
+
+    <!-- 主题内容 -->
+    <div class="content">
+      <ul class="mui-clearfix">
+        <!-- 挖个坑 -->
+
+      </ul>
+
+
+    </div>
+
+
+
+
+    <!-- 底部 -->
+    <div class="mmm_footer">
+      <div class="info">
+        <ul class="mui-clearfix">
+          <li>
+            <a href="#">
+              登录
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              注册
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img class="goTop" src="images/top.jpg">
+              <span>返回顶部</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="last">
+        <p class="first">
+          <span class="download">
+            <a href="#">手机APP下载</a>
+          </span>
+          <span class="version">
+            <a href="#">慢慢买手机版</a>
+          </span>
+          -- 掌上比价平台
+        </p>
+        <p class="second">m.manmanbuy.com</p>
+      </div>
+    </div>
+  </div>
+
+
+  <script type="text/html" id="tpl">
+    {{ each result v i}}
+    <li>
+      <a data-id={{v.productId}} href="discount.html?productId={{v.productId}}">
+        <div class="pro_img">
+          <!-- <img src="images/gengduo.png" alt=""> -->
+          {{@v.productImg}}
+        </div>
+        <div class="tips mui-ellipsis-2">
+          {{v.productName}}
+        </div>
+        <span class="price mui-ellipsis-1">{{v.productPrice}}</span>
+        <div class="bottom">
+          {{v.productFrom}}{{v.productTime}}
+        </div>
+      </a>
+    </li>
+
+    {{/each}}
+
+
+  </script>
+
+
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/mui/js/mui.js"></script>
+  <script src="lib/artTemplate/template-web.js"></script>
+  <script src="js/common/Route.js"></script>
+  <script src="js/common/Tools.js"></script>
+  <script src="js/inlanddiscount.js"></script>
+</body>
+
+</html>

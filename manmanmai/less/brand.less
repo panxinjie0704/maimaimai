@@ -1,0 +1,237 @@
+@import 'base-moneyctrl.less';
+@import 'common.less';
+
+body {
+  background-color: #fff;
+}
+.mmm_container {
+  margin: 0rem /* 0/75 */;
+ }
+
+ // 面包屑
+.breadcrumb {
+  width: 100%;
+  line-height: 1.013333rem /* 76/75 */;
+  line-height: 1rem /* 75/75 */;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  background-color: #fff;
+  background-image: linear-gradient(to bottom,#fcfcfc,#ececec);
+  padding-left: .24rem /* 18/75 */;
+ a {
+   font-size: .346667rem /* 26/75 */;
+   color: #2c2d2d;
+ }
+
+}
+
+// 哪个品牌好
+.hd {
+  height: 1.013333rem /* 76/75 */;
+  border-top: 1px solid #ccc;
+  border-bottom: .013333rem /* 1/75 */ solid #ccc;
+  padding-left: .266667rem /* 20/75 */;
+  color: #902f02;
+  font-size: .373333rem /* 28/75 */;
+  line-height: 1.013333rem /* 76/75 */;
+  background-color: #f3f3f3;
+}
+
+// 内容区域
+
+.brand_content  {
+  width: 100%;
+  .desc {
+    width: 100%;
+    li:nth-child(1) .left{
+      background-color: #f10e0e;
+    }
+    li:nth-child(2) .left{
+      background-color: #ff9314;
+    }
+    li:nth-child(3) .left{
+      background-color: #8adf5b;
+    }
+    li {
+      height: 1.733333rem /* 130/75 */;
+      border-bottom: 1px solid #ccc;
+      padding: .24rem /* 18/75 */;
+      .left {
+        float: left;
+        width: .533333rem /* 40/75 */;
+        height: .533333rem /* 40/75 */;
+        background-color: #c9c9c9;
+        font-size: .293333rem /* 22/75 */;
+        color: #fff;
+        text-align: center;
+        line-height: .533333rem /* 40/75 */;
+      }
+  
+      .right {
+        width: 8.8rem /* 660/75 */;
+        float: left;
+        position: relative;
+        margin-left: .133333rem /* 10/75 */;
+        line-height: .533333rem /* 40/75 */;
+        .title {  
+          height: .533333rem /* 40/75 */;
+          width: 100%;
+          font-size: .413333rem /* 31/75 */;
+          color: #00000a;
+        }
+        .sall {
+          margin-top: .226667rem /* 17/75 */;
+          font-size: .32rem /* 24/75 */;
+          color: #969ea9;
+        }
+        .link {
+          position: absolute;
+          top: .373333rem /* 28/75 */;
+          right: 0rem /* 0/75 */;
+          font-size: .4rem /* 30/75 */;
+          color: #a0b0b0;
+        }
+      }
+      
+    }
+
+  }
+}
+
+
+// 商品的详情
+
+.list {
+  width: 100%;
+  ul {
+    width: 100%;
+    li {
+      width: 100%;
+      padding: .32rem /* 24/75 */;  
+      border-bottom: 1px solid #ccc;
+  a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  
+  .pic {
+   width: 2.506667rem /* 188/75 */;
+   height: 100%;
+   float: left;
+   img {
+     width: 100%;
+     height: 100%;
+   }
+  }
+ .product {
+// width: 100%;
+height: 100%;
+margin-left: 3.066667rem /* 230/75 */;
+.tel {
+  font-size: .306667rem /* 23/75 */;
+  line-height: .666667rem /* 50/75 */;
+  color: #191109;
+}
+
+.price {
+  font-size: .4rem /* 30/75 */;
+  .first {
+    display: block;
+    color: #e81f00;
+    line-height: .4rem /* 30/75 */;
+    padding: .266667rem /* 20/75 */ 0rem /* 0/75 */;
+  }
+}
+
+.more {
+  font-size: .333333rem /* 25/75 */;
+  color: #bdadb3;
+  left: .333333rem /* 25/75 */;
+}
+ }
+  }
+    }
+  }
+}
+
+
+// 商品的评论
+
+.commit {
+width: 100%;
+ul{
+  width: 100%;
+
+  li {
+    padding: .346667rem /* 26/75 */;
+    a {
+      display: block;
+      .pro_tit {
+        padding-top: .133333rem /* 10/75 */;
+        overflow: hidden;
+        height: 3.2rem /* 240/75 */;
+        margin-left: .4rem /* 30/75 */;
+        .pic {
+          width: 2.533333rem /* 190/75 */;
+          height: 2.04rem /* 153/75 */;
+          float: left;
+          img {
+            width: 2.48rem /* 186/75 */;
+          }
+        }
+  
+        .pro_desc {
+          font-size: .4rem /* 30/75 */;
+          line-height: .4rem /* 30/75 */;
+          color: #989179;
+
+        }
+
+      }
+
+      .pro_content {
+        padding-top: .333333rem /* 25/75 */;
+        width: 100%;
+        border: .013333rem /* 1/75 */ solid #ccc;
+       .content_title {
+         width: 100%;
+         height: .8rem /* 60/75 */;
+         line-height: .4rem /* 30/75 */;
+         font-size: .333333rem /* 25/75 */;
+
+         .name {
+           float: left;
+           color: #4a624e;
+           line-height: .4rem /* 30/75 */;
+           height: 100%;
+           font-size: .24rem /* 18/75 */;
+         }
+         .star {
+           color: #ff841d;
+           float: left;
+           font-size: .24rem /* 18/75 */;
+           
+
+         }
+         .date {
+           float: right;
+           line-height: .4rem /* 30/75 */;
+           height: 100%;
+           font-size: .24rem /* 18/75 */;
+         }
+
+       }
+
+       .main {
+         font-size: .346667rem /* 26/75 */;
+         line-height: .613333rem /* 46/75 */;
+         padding: .24rem /* 18/75 */;
+         color: #06031b;
+       }
+      }
+      
+    }
+  }
+
+}
+}

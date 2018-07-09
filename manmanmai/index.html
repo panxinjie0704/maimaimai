@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>慢慢买-首页</title>
+  <link rel="stylesheet" href="lib/mui/css/mui.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<script src="lib/flexible.js"></script>
+
+<body>
+  <div class="mmm_container">
+    <!-- 头部 -->
+    <div class="mmm_header">
+      <div class="logo mui-pull-left">
+        <img src="images/header_logo.png" alt="">
+      </div>
+      <div class="download mui-pull-right">
+        <img src="images/header_app.png" alt="">
+      </div>
+    </div>
+    <!-- 搜索框 -->
+    <div class="mmm_search">
+      <input type="text" id="search" placeholder="请输入你想要比价的商品" class="mui-pull-left">
+      <button class="btn_search mui-pull-right ">搜索</button>
+    </div>
+    <!-- 导航区域 -->
+    <div class="mmm_nav">
+      <ul class="mui-clearfix">
+        <!-- 挖了个大坑 -->
+
+      </ul>
+    </div>
+
+    <!-- 折扣推荐区域-->
+    <div class="mmm_recommend">
+      <div class="head">
+        <div class="left mui-pull-left">
+          <span>超值折扣低价推荐</span>
+        </div>
+        <div class="right mui-pull-right">
+          <span class="mui mui-icon mui-icon-arrowright"></span>
+        </div>
+      </div>
+      <div class="content">
+        <ul>
+          <!-- 挖了个坑 -->
+
+
+        </ul>
+        <div class="more">
+          <a href="moneyctrl.html">
+            更多优惠信息 »
+
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- 底部 -->
+    <div class="mmm_footer">
+      <div class="info">
+        <ul class="mui-clearfix">
+          <li>
+            <a href="#">
+              登录
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              注册
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="images/top.jpg">
+              <span>返回顶部</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="last">
+        <p class="first">
+          <span class="download">
+            <a href="#">手机APP下载</a>
+          </span>
+          <span class="version">
+            <a href="#">慢慢买手机版</a>
+          </span>
+          -- 掌上比价平台
+        </p>
+        <p class="second">m.manmanbuy.com</p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- 模板一 -->
+  <script type="text/html" id="tpl">
+    {{ each result v i}}
+    <li data-id={{v.indexmenuId}}>
+      <a href="{{v.titlehref}}">
+        <!-- <img src="images//ic_search.png" alt=""> -->
+        {{@v.img}}
+        <p class="text">{{ v.name }}</p>
+      </a>
+    </li>
+    {{/each}}
+
+  </script>
+
+  <!-- 模板二 -->
+  <script type="text/html" id="tpl1">
+    {{ each result v i }}
+    <li>
+      <a data-id={{v.productId}} href="moneyproduct.html?productId={{v.productId}}">
+        <div class="img">
+          {{#v.productImgLg}}
+        </div>
+        <div class="re_right">
+          <p class="top">{{ v.productName}}</p>
+          <p class="bottom">
+            {{v.productFrom}} | {{v.productTime}}
+            <span class="mui-pull-right">{{v.productComCount}}</span>
+          </p>
+        </div>
+      </a>
+    </li>
+    {{ /each}}
+  </script>
+
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/mui/js/mui.js"></script>
+  <script src="lib/artTemplate/template-web.js"></script>
+  <script src="js/common/Route.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
